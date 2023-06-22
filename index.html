@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projects</title>
+<style>
+body {
+    background-color: #213A85;
+}
+
+.project-container {
+    background-color: #405DB7;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(33.33% - 20px); /* Adjusted width to include margin */
+    max-width: 350px;
+    position: relative;
+}
+
+.project-title {
+    color: white;
+    font-size: 24px;
+}
+
+  /* gif images */
+.project-description img {
+    width: 350px;
+    height: 175px;
+    border-radius: 10px;
+  margin-bottom: 0;
+  align-items: center;
+}
+  
+  /* text description */
+.project-description {
+    color: white;
+    font-size: 16px;
+    margin-top: -12%;
+    margin-bottom:15%;
+    display: flex;
+    align-items: center;
+}
+
+.project-links {
+    display: flex; 
+  /* needed to fill bottom of container*/ */
+    align-items: center;
+    padding-top: 10px;
+    width: 100%; /* Occupy the full width of the container */
+    position: absolute;
+    bottom: 0; /* Position the buttons at the bottom */
+    left: 0; /* Align the buttons to the left */
+}
+
+.project-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0; /* Remove the horizontal padding */
+    border: 1px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #213A85;
+    flex: 1; /* Distribute the available space equally between the buttons */
+    margin: 0; /* Remove the spacing between the buttons */
+}
+
+.project-links a:first-child {
+    margin-left: 0; /* Remove the space between the left button and the left container edge */
+  border-radius: 0 0 0px 5px; /* Apply rounded corners only to the bottom */
+}
+
+.project-links a:last-child {
+    margin-right: 0; /* Remove the space between the right button and the right container edge */
+  border-radius: 0 0 5px 0px; /* Apply rounded corners only to the bottom */
+}
+
+.project-links a:hover {
+    background-color: #45a049;
+}
+
+.project-image-link {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url('https://static-00.iconduck.com/assets.00/github-icon-2048x1988-jzvzcf2t.png');
+  background-size: auto 80%; 
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  opacity: 0.7;
+}
+
+.project-image-link:hover {
+    opacity: 1;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+  h2 {
+    color: white;
+    text-align: center;
+    padding-bottom: 10%;
+}
+  
+.projects-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+</style>
+</head>
+<body>
+    <h1>Projects</h1>
+    <div class="projects-wrapper">
+        <div class="project-container">
+            <h2 class="project-title">Address Book<br><i>Data Classes</i></h2>
+            <div class="project-description">
+                <img src="images/addressbook.gif" alt="Address Book Gif">
+            </div>
+            <p class="project-description">
+                This Python project implements an address book using Flask, where data classes are utilized to define the structure of a contact. The project includes a web interface allowing users to add new contacts by inputting their name, address, and phone number. The `Contact` class, decorated with `@dataclass`, encapsulates these attributes, generating an initializer and helpful methods such as string representation and equality comparison. The contacts are stored in a list, and the web application handles both the addition of new contacts and the deletion of existing ones. The project provides a simple and intuitive way to manage and organize contact information efficiently.
+            </p>
+            <div class="project-links">
+                <a href="https://data-classes-address-book.mxnha77.repl.co/" target="_blank">Try It</a>
+                <a href="https://github.com/your-username/repo-address-book" target="_blank" class="project-image-link"></a>
+            </div>
+        </div>
+        <div class="project-container">
+            <h2 class="project-title">Task Tracker<br><i>Array-Based Stacks</i></h2>
+            <div class="project-description">
+                <img src="images/tasktracker.gif" alt="Project 2 Gif">
+            </div>
+            <p class="project-description">
+                For this Python task tracker project, array-based stacks were utilized to efficiently manage tasks. The `ArrayStack` class implements a stack using an array as the underlying storage, allowing tasks to be added, completed, and undone. The project provides a user-friendly interface for adding tasks through form submissions, toggling task completion status, and undoing actions. By leveraging stacks, the project enables effective task management, empowering users to stay organized and productive with their task tracking endeavors.
+            </p>
+            <div class="project-links">
+                <a href="https://array-based-stack-task-tracker.mxnha77.repl.co/" target="_blank">Try It</a>
+                <a href="https://github.com/your-username/repo-project2" target="_blank" class="project-image-link"></a>
+            </div>
+        </div>
+
+        <div class="project-container">
+            <h2 class="project-title">Movie Booking Forum<br><i>Array-Based Queues</i></h2>
+            <div class="project-description">
+                <img src="images/movieforum.gif" alt="Project 3 Gif">
+            </div>
+            <p class="project-description">
+                For this Python moving booking forum project, array-based queues were used to manage the ticket booking process efficiently. Functions such as is_empty(), is_full(), insert(), and remove() were employed to handle queue operations. Users submit their name and payment confirmation, and if the queue is not full, their ticket details are added to the queue. Tickets are processed in the order they were added, and real-time updates on the queue status and processed customers are provided. This ensures a smooth and organized ticket booking experience.
+            </p>
+            <div class="project-links">
+                <a href="https://array-based-queues-movie-booking-forum.mxnha77.repl.co/" target="_blank">Try It</a>
+                <a href="https://github.com/your-username/repo-project3" target="_blank" class="project-image-link"></a>
+            </div>
+        </div>
+    
+        <div class="project-container">
+            <h2 class="project-title">Shopping Cart<br><i>Array-Based Lists</i></h2>
+            <div class="project-description">
+                <img src="images/shcart.gif" alt="Project 4 Gif">
+            </div>
+            <p class="project-description">
+                For this Python shopping cart project, array-based lists were utilized to create an efficient shopping cart management system. The `List` class provides methods such as `append()`, `remove()`, `linear_search()`, `index()`, `count()`, and more to handle list operations. These methods enable adding items to the cart, removing items from the cart, performing linear searches, retrieving item indices, checking item existence, and counting occurrences. The project allows users to interact with a web interface where they can view a list of food items. Users can add items to the shopping cart using the `append()` method and remove items using the `remove()` method. The project enhances the shopping experience by providing a user-friendly interface for managing the shopping cart efficiently and facilitating seamless item tracking and modification.
+            </p>
+            <div class="project-links">
+                <a href="https://array-based-lists-shopping-cart.mxnha77.repl.co/" target="_blank">Try It</a>
+                <a href="https://github.com/your-username/repo-project4" target="_blank" class="project-image-link"></a>
+            </div>
+        </div>
+        
+        <div class="project-container">
+            <h2 class="project-title">Note Taking App<br><i>Linked Lists</i></h2>
+            <div class="project-description">
+                <img src="images/notetaking.gif" alt="Project 5 Gif">
+            </div>
+            <p class="project-description">
+                For this Python Fibonacci calculator project, recursion was used to generate the Fibonacci sequence. The `fibonacci()` function recursively calculates the Fibonacci sequence up to the `n`th term by combining the previous two terms. The project allows users to input a number through a web interface and displays the corresponding Fibonacci sequence. By leveraging recursion, the project provides an efficient and concise solution for calculating and visualizing the Fibonacci sequence. It enables users to explore and analyze this important mathematical sequence, which finds applications in various domains such as mathematics, computer science, and algorithm design.
+            </p>
+            <div class="project-links">
+                <a href="https://recursion-fibonacci-number-calculator.mxnha77.repl.co/" target="_blank">Try It</a>
+                <a href="https://github.com/your-username/repo-project5" target="_blank" class="project-image-link"></a>
+            </div>
+        </div>
+        
+        <div class="project-container">
+            <h2 class="project-title">Fibonacci Number Calculator<br><i>Recursion</i></h2>
+            <div class="project-description">
+                <img src="images/fibonacci.gif" alt="Project 6 Gif">
+            </div>
+            <p class="project-description">
+                For this  note taking app project, linked lists were used to implement the underlying data structure for managing the notes. The `NoteLinkedList` class was created to handle the notes, where each note is represented by a `NoteNode` object containing the note's information and a reference to the next node in the list. The linked list provides efficient insertion and removal operations, allowing for dynamic management of notes. The project allows users to add and delete notes through a web interface, leveraging the advantages of linked lists such as constant-time insertion at the beginning (`prepend` operation) and efficient removal of notes by traversing the list. By using linked lists, the project offers a flexible and scalable solution for organizing and managing notes, providing a user-friendly experience for note taking and organization.
+            </p>
+            <div class="project-links">
+                <a href="https://linked-lists-note-taking-app.mxnha77.repl.co/" target="_blank">Try It</a>
+                <a href="https://github.com/your-username/repo-project6" target="_blank" class="project-image-link"></a>
+            </div>
+        </div>
+        
+        <div class="project-container">
+            <h2 class="project-title">Factorial Calculator<br><i>Linked Recursion</i></h2>
+            <div class="project-description">
+                <img src="images/factorial.gif" alt="Project 7 Gif">
+            </div>
+            <p class="project-description">
+                For this factorial calculator project, to implement the factorial calculations, linked recursion was used. The `calculate_factorial` function recursively calculates the factorial of a given number by breaking it down into smaller subproblems. It starts with the base cases of 0 and 1, returning 1. For any other number `n`, it recursively calls itself with `n - 1` and multiplies the result by `n`. This linked recursion approach allows for the efficient computation of factorials by leveraging the recursive nature of the factorial formula. The project provides a web interface where users can input a number, and it calculates and displays the factorial along with the step-by-step calculations. It enables users to quickly obtain factorials of various numbers, demonstrating the usefulness of linked recursion in performing repetitive mathematical computations effectively.
+            </p>
+            <div class="project-links">
+                <a href="https://linked-recursion-factorial-calculator.mxnha77.repl.co/" target="_blank">Try It</a>
+                <a href="https://github.com/your-username/repo-project7" target="_blank" class="project-image-link"></a>
+            </div>
+        </div>
+        
+        <div class="project-container">
+            <h2 class="project-title">Event Scheduler<br><i>Binary Search Trees</i></h2>
+            <div class="project-description">
+                <img src="images/eventsched.gif" alt="Project 8 Gif">
+            </div>
+            <p class="project-description">
+                For this event scheduler project, binary search trees (BSTs) were used to efficiently manage and organize events. The BST data structure allows for the insertion, retrieval, and sorting of events based on their date. The project utilizes the Event, Node, and EventScheduler classes. The Event class represents individual events with attributes such as date, time, location, and description. The Node class represents a node in the BST and holds an event object. The EventScheduler class manages the BST and provides methods for adding events recursively, performing an inorder traversal to retrieve events in sorted order, and maintaining the BST property. By utilizing BSTs, the project enables effective event scheduling, facilitates sorting and retrieval of events based on their dates, and provides an organized system for managing and displaying events.
+            </p>
+            <div class="project-links">
+                <a href="https://binary-search-trees-event-scheduler.mxnha77.repl.co/" target="_blank">Try It</a>
+                <a href="https://github.com/your-username/repo-project8" target="_blank" class="project-image-link"></a>
+            </div>
+        </div>
+        
+        <div class="project-container">
+            <h2 class="project-title">Journal Entries<br><i>Hashing</i></h2>
+            <div class="project-description">
+                <img src="images/journal.gif" alt="Project 9 Gif">
+            </div>
+            <p class="project-description">
+                For this journal entries project, hashing was used to create a HashTable data structure for efficient storage and retrieval of journal entries based on their dates. The HashTable class utilizes a dictionary (self.entries) to store entries where the date serves as the key. The insert method hashes the date and stores the entry in the dictionary using the hashed value as the key. Similarly, the remove method uses the date to hash and remove the corresponding entry from the dictionary. The find method retrieves the entry associated with a given date from the dictionary using hashing for quick lookup. By leveraging hashing, the project enables fast and constant-time access to journal entries based on their dates, improving the efficiency of adding, deleting, and viewing entries. The HashTable data structure provides a reliable and organized storage mechanism for journaling, facilitating easy management and retrieval of entries based on specific dates.
+            </p>
+            <div class="project-links">
+                <a href="https://hashing-journal-entries.mxnha77.repl.co/" target="_blank">Try It</a>
+                <a href="https://github.com/your-username/repo-project9" target="_blank" class="project-image-link"></a>
+            </div>
+        </div>
+        
+        <div class="project-container"> <center>
+            <h2 class="project-title">Personal Finance Tracker<br><i>Sorting</i></h2>
+            <div class="project-description">
+                <img src="images/financetracker.gif" alt="Project 10 Gif">
+            </div>
+            <p class="project-description">
+                For this finance tracker project, sorting was used to create a sorted view of transactions and an expense summary based on different categories. The `transactions` list stores each transaction, and by applying sorting based on criteria such as date or category, users can view their transactions in an organized manner. Additionally, the `expense_summary` dictionary tracks the total expenses for each category, allowing users to gain insights into their spending habits. This sorting functionality enhances the user experience by providing a clear overview of transactions and enabling effective financial tracking and analysis, ultimately helping users make informed decisions and manage their personal finances more effectively.
+            </p>
+            <div class="project-links">
+                <a href="https://sorting-personal-finance-tracker.mxnha77.repl.co/" target="_blank">Try It</a>
+                <a href="https://github.com/your-username/repo-project10" target="_blank" class="project-image-link"></a>
+            </div>
+        </div>
+
+              <!-- 
+        <div class="project-container">
+            <h2 class="project-title">Project 11</h2>
+            <div class="project-description">
+                <img src="images/project10.gif" alt="Project 11 Gif">
+            </div>
+            <p class="project-description">
+                Description of Project 11 goes here.
+            </p>
+            <div class="project-links">
+                <a href="https://project10-demo.com" target="_blank">Try It</a>
+                <a href="https://github.com/your-username/repo-project10" target="_blank" class="project-image-link"></a>
+            </div>
+        </div>
+              
+        <div class="project-container">
+            <h2 class="project-title">Project 12</h2>
+            <div class="project-description">
+                <img src="images/project10.gif" alt="Project 12 Gif">
+            </div>
+            <p class="project-description">
+                Description of Project 12 goes here.
+            </p>
+            <div class="project-links">
+                <a href="https://project10-demo.com" target="_blank">Try It</a>
+                <a href="https://github.com/your-username/repo-project10" target="_blank" class="project-image-link"></a>
+            </div>
+        </div> -->
+    </div>
+</body>
+</html>
