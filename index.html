@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,9 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="favicon.png">
   <title>Algorithmic Applications</title>
+  <link rel="stylesheet" href="style.css">
 <style>
 body {
     background-color: #213A85;
+    font-family: Noto Sans Multani;
+    margin: 0;
+    padding: 0;
+}
+
+.projects-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    justify-content: center;
 }
 
 .project-container {
@@ -16,13 +27,10 @@ body {
     border-radius: 10px;
     padding: 20px;
     margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: calc(33.33% - 20px); /* Adjusted width to include margin */
-    max-width: 350px;
+    flex: 1;
+    max-width: calc(33.33% - 20px);
     position: relative;
+    min-width: 300px;
 }
 
 .project-title {
@@ -30,16 +38,16 @@ body {
     font-size: 24px;
 }
 
-  /* gif images */
+/* gif images */
 .project-description img {
-    width: 350px;
-    height: 175px;
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
-  margin-bottom: 0;
-  align-items: center;
+    margin-bottom: 0;
+    align-items: center;
 }
   
-  /* text description */
+/* text description */
 .project-description {
     color: white;
     font-size: 16px;
@@ -47,17 +55,17 @@ body {
     margin-bottom:15%;
     display: flex;
     align-items: center;
+    text-align: center; 
 }
 
 .project-links {
-    display: flex; 
-  /* needed to fill bottom of container*/ */
+    display: flex;
     align-items: center;
     padding-top: 10px;
-    width: 100%; /* Occupy the full width of the container */
+    width: 100%;
     position: absolute;
-    bottom: 0; /* Position the buttons at the bottom */
-    left: 0; /* Align the buttons to the left */
+    bottom: 0;
+    left: 0;
 }
 
 .project-links a {
@@ -66,23 +74,25 @@ body {
     justify-content: center;
     color: white;
     text-decoration: none;
-    padding: 10px 0; /* Remove the horizontal padding */
+    padding: 10px 0;
     border: 1px solid black;
     cursor: pointer;
     transition: background-color 0.3s ease;
     background-color: #213A85;
-    flex: 1; /* Distribute the available space equally between the buttons */
-    margin: 0; /* Remove the spacing between the buttons */
+    flex: 1;
+    margin: 0;
 }
 
 .project-links a:first-child {
-    margin-left: 0; /* Remove the space between the left button and the left container edge */
-  border-radius: 0 0 0px 5px; /* Apply rounded corners only to the bottom */
+    margin-left: 0;
+    border-radius: 0 0 0px 5px;
+    height: 30px; 
 }
 
 .project-links a:last-child {
-    margin-right: 0; /* Remove the space between the right button and the right container edge */
-  border-radius: 0 0 5px 0px; /* Apply rounded corners only to the bottom */
+    margin-right: 0;
+    border-radius: 0 0 5px 0px;
+    height: 30px; 
 }
 
 .project-links a:hover {
@@ -121,11 +131,7 @@ h2 {
 h3 {
   color: white;
   text-align: center;
-}
-.projects-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  margin-bottom: 5px;
 }
 </style>
 </head>
